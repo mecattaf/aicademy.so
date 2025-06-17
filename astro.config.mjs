@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mdx from '@astrojs/mdx';
 import expressiveCode from 'astro-expressive-code';
+import starlightThemeBlack from 'starlight-theme-black';
 
 export default defineConfig({
   site: 'https://aicademy.so',
@@ -23,15 +24,15 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: 'Guides',
-          autogenerate: { directory: 'guides' }
+          label: 'Getting Started',
+          link: '/',
         },
+        // We'll add more sections as content is created
       ],
       social: [
         { label: 'GitHub', icon: 'github', href: 'https://github.com/mecattaf/aicademy.so' },
       ],
       pagefind: true,
-      // Remove the footer configuration - it's not a valid Starlight option
       defaultLocale: 'en',
       locales: {
         en: {
@@ -40,6 +41,17 @@ export default defineConfig({
           dir: 'ltr',
         }
       },
+      plugins: [
+        // Apply the black theme with required config
+        starlightThemeBlack({
+          navLinks: [
+            {
+              label: 'Docs',
+              link: '/',
+            }
+          ]
+        })
+      ]
     }),
   ],
   output: 'static',
