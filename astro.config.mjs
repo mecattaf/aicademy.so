@@ -24,10 +24,28 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: 'Getting Started',
+          label: 'Welcome',
           link: '/',
         },
-        // We'll add more sections as content is created
+        {
+          label: 'Journey',
+          items: [
+            { label: 'Overview', link: '/journey/' },
+            // Add more items as you create them
+          ],
+        },
+        {
+          label: 'Fundamentals',
+          items: [
+            { label: 'Overview', link: '/fundamentals/' },
+          ],
+        },
+        {
+          label: 'Tools',
+          items: [
+            { label: 'Overview', link: '/tools/' },
+          ],
+        },
       ],
       social: [
         { label: 'GitHub', icon: 'github', href: 'https://github.com/mecattaf/aicademy.so' },
@@ -42,13 +60,16 @@ export default defineConfig({
         }
       },
       plugins: [
-        // Apply the black theme with required config
         starlightThemeBlack({
           navLinks: [
             {
-              label: 'Docs',
+              label: 'Home',
               link: '/',
-            }
+            },
+            {
+              label: 'Journey',
+              link: '/journey/',
+            },
           ]
         })
       ]
