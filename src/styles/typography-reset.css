@@ -1,0 +1,28 @@
+/* 
+ * Typography reset - simplified version
+ * Modified to respect Starlight's core styling while keeping Inter font characteristics
+ */
+
+/* Base typography variables */
+:root {
+  /* Font imports will be handled in custom.css */
+  
+  /* Ensure consistent sizing but don't reset margins/padding that Starlight needs */
+  scroll-padding-top: calc(var(--sl-nav-height) + 36px);
+  
+  /* Apply the Linear-specific font feature settings globally */
+  font-feature-settings: "cv01", "ss03";
+  font-variation-settings: "opsz" auto;
+}
+
+/* Don't reset all elements - this was breaking Starlight layouts */
+
+/* Let Starlight handle its own spacing and only modify font rendering aspects */
+html, body {
+  text-rendering: optimizeLegibility;
+}
+
+/* Improve readability of pre and code elements but preserve Starlight's styling */
+pre, code {
+  font-family: var(--sl-font-mono);
+}

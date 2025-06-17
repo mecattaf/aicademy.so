@@ -1,0 +1,57 @@
+/* Import Inter font - both regular and variable versions */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://rsms.me/inter/inter.var.css'); /* Variable font version */
+
+/* Define typography variables inspired by Linear but compatible with Starlight */
+:root {
+  /* Font families */
+  --sl-font: 'Inter', sans-serif;
+  --sl-font-mono: ui-monospace, 'SF Mono', Menlo, Monaco, 'Cascadia Mono',
+    'Segoe UI Mono', 'Roboto Mono', 'Liberation Mono', 'Courier New', monospace;
+  
+  /* Letter spacing adjustments */
+  --text-regular-letter-spacing: -0.011em;
+  --text-small-letter-spacing: -0.013em;
+  --heading-letter-spacing: -0.022em;
+}
+
+/* Apply variable font if supported by the browser */
+@supports (font-variation-settings: normal) {
+  :root {
+    --sl-font: 'Inter var', 'Inter Variable', 'Inter', sans-serif;
+    
+    /* Font weights using Linear's specific values */
+    --sl-font-weight-normal: 400; 
+    --sl-font-weight-medium: 510;
+    --sl-font-weight-semibold: 590;
+    --sl-font-weight-bold: 680;
+  }
+}
+
+/* Apply font globally but don't override Starlight's layout */
+body {
+  font-family: var(--sl-font);
+  font-feature-settings: "cv01", "ss03"; /* Character variants from Linear */
+  font-variation-settings: "opsz" auto; /* Optical sizing auto adjustment */
+}
+
+/* Apply specific typography settings to headings without changing sizes */
+:is(h1, h2, h3, h4, h5, h6) {
+  letter-spacing: var(--heading-letter-spacing);
+  font-family: var(--sl-font);
+}
+
+/* Regular text - subtle letter spacing adjustment */
+p, ul, ol, li {
+  letter-spacing: var(--text-regular-letter-spacing);
+}
+
+/* Small text (like captions, footnotes) */
+small, .text-small {
+  letter-spacing: var(--text-small-letter-spacing);
+}
+
+/* Ensure code blocks maintain proper font family */
+pre, code {
+  font-family: var(--sl-font-mono);
+}

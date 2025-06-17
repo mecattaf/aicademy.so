@@ -1,0 +1,21 @@
+{
+  "name": "aicademy-so",
+  "type": "module",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.34.1",
+    "@astrojs/mdx": "^4.0.0",
+    "astro": "^5.7.5",
+    "astro-expressive-code": "^0.41.2",
+    "starlight-theme-black": "^0.6.0",
+    "@pagefind/default-ui": "^1.0.0"
+  }
+}
