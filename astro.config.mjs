@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import expressiveCode from 'astro-expressive-code';
 
 export default defineConfig({
-  site: 'https://aicademy.so',  // ← Change this
+  site: 'https://aicademy.so',
   integrations: [
     expressiveCode({
       themes: ['github-dark'],
@@ -15,26 +15,23 @@ export default defineConfig({
     }),
     mdx(),
     starlight({
-      title: 'AIcademy',  // ← Change this
-      tagline: 'Documenting my journey with Agentic Coding',  // ← Add tagline
+      title: 'AIcademy',
+      tagline: 'Documenting my journey with Agentic Coding',
       customCss: [
         './src/styles/typography-reset.css',
         './src/styles/custom.css',
       ],
       sidebar: [
-        // We'll update this strucrture later
         {
           label: 'Guides',
           autogenerate: { directory: 'guides' }
         },
       ],
       social: [
-        { label: 'GitHub', icon: 'github', href: 'https://github.com/mecatttaf/aicademy.so' },  // ← Update
+        { label: 'GitHub', icon: 'github', href: 'https://github.com/mecattaf/aicademy.so' },
       ],
       pagefind: true,
-      footer: {
-        // Update footer links as needed
-      },
+      // Remove the footer configuration - it's not a valid Starlight option
       defaultLocale: 'en',
       locales: {
         en: {
