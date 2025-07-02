@@ -70,7 +70,8 @@ export default defineConfig({
               label: 'Journey',
               link: '/journey/',
             },
-          ]
+          ],
+          footerText: '© 2025 AIcademy by [Thomas Mecattaf](https://mecattaf.dev).'
         })
       ]
     }),
