@@ -108,7 +108,18 @@ frequently prune and maintain documentation drift: documentation as single sourc
 mechanical vs creative: try to keep as many things mechanical as possible
 
 
+some references to reach through. this is other people's experience with agentic coding:
+- https://crawshaw.io/blog/programming-with-agents
+- https://crawshaw.io/blog/programming-with-llms
+- https://simonwillison.net/2025/Mar/11/using-llms-for-code/
+- https://nicholas.carlini.com/writing/2024/how-i-use-ai.html
+- https://blog.nilenso.com/blog/2025/05/29/ai-assisted-coding/
+- https://ai.intellectronica.net/ai-assisted-software-engineering-in-the-large?trk=comments_comments-list_comment-text
+- https://ai.intellectronica.net/ruler
 
+first post should be about the specifics of claude code github action. some resources to look through specifically here:
+https://www.kdnuggets.com/automate-github-workflows-with-claude-4?utm_source=perplexity
+- https://dev.to/depot/faster-claude-code-agents-in-github-actions-1p2h?utm_source=perplexity
 
-
-
+author i follow:
+https://foo.zone/gemfeed/2025-06-22-task-samurai.html
