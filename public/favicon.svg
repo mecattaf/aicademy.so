@@ -1,3 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M18 2.1a15.9 15.9 0 1 0 0 31.8 15.9 15.9 0 0 0 0-31.8zm-3 23.9v-3h6v3h-6zm9-9a3 3 0 0 1-3 3h-6a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6z"/>
+<svg width="32" height="32" viewBox="0 0 32 232" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="16" cy="16" r="16" fill="#CBA6F7;"2/>
 </svg>

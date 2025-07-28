@@ -35,3 +35,5 @@ https://deepwiki.com/PurCL/RepoAudit
 https://deepwiki.com/asgeirtj/system_prompts_leaks
 https://github.com/AIDotNet/OpenDeepWiki
 https://github.com/AsyncFuncAI/deepwiki-open/tree/main/api
+
+also see opendevin? devindocs?
